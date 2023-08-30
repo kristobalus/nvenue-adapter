@@ -1,0 +1,19 @@
+version: '3.4'
+
+networks:
+  app:
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: npm run start
+    environment:
+      PROVIDER_API_KEY: "${PROVIDER_API_KEY}"
+      PROVIDER_API_URL: "${PROVIDER_API_URL}"
+      TRIGGER_API_URL: "${TRIGGER_API_URL}"
+      TRIGGER_ACCESS_TOKEN: "${TRIGGER_ACCESS_TOKEN}"
+      TRIGGER_SECRET: "${TRIGGER_SECRET}"
+    networks:
+      - app

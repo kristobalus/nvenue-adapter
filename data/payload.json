@@ -1,0 +1,161 @@
+{
+  "payload": {
+    "game": {
+      "id": "d8539eb6-3e27-40c8-906f-9cd1736321d8",
+      "status": "inprogress",
+      "coverage": "full",
+      "reference": "0012200003",
+      "scheduled": "2022-10-02T00:00:00+00:00",
+      "home": {
+        "name": "Bucks",
+        "market": "Milwaukee",
+        "reference": "1610612749",
+        "id": "583ecefd-fb46-11e1-82cb-f4ce4684ea4c",
+        "points": 0,
+        "bonus": false,
+        "remaining_timeouts": 7,
+        "sr_id": "sr:team:3410"
+      },
+      "away": {
+        "name": "Grizzlies",
+        "market": "Memphis",
+        "reference": "1610612763",
+        "id": "583eca88-fb46-11e1-82cb-f4ce4684ea4c",
+        "points": 0,
+        "bonus": false,
+        "remaining_timeouts": 7,
+        "sr_id": "sr:team:3415"
+      }
+    },
+    "event": {
+      "id": "ab362b76-b89d-4cd8-80e3-340b048f98c8",
+      "event_type": "lineupchange",
+      "number": 5002,
+      "sequence": 1664669447995,
+      "clock": "12:00",
+      "clock_decimal": "12:00",
+      "updated": "2022-10-02T00:10:48Z",
+      "wall_clock": "2022-10-02T00:10:48Z",
+      "created": "2022-10-02T00:10:48Z",
+      "description": "Bucks lineup change (Bobby Portis, Grayson Allen, Jordan Nwora, Brook Lopez, Jrue Holiday)",
+      "home_points": 0,
+      "away_points": 0,
+      "attribution": {
+        "name": "Bucks",
+        "market": "Milwaukee",
+        "reference": "1610612749",
+        "id": "583ecefd-fb46-11e1-82cb-f4ce4684ea4c",
+        "sr_id": "sr:team:3410"
+      },
+      "period": {
+        "id": "fece1ac0-b703-4478-8a7c-3f27313dec97",
+        "number": 1,
+        "sequence": 1,
+        "type": "quarter"
+      },
+      "on_court": {
+        "home": {
+          "name": "Bucks",
+          "market": "Milwaukee",
+          "reference": "1610612749",
+          "id": "583ecefd-fb46-11e1-82cb-f4ce4684ea4c",
+          "sr_id": "sr:team:3410",
+          "players": [
+            {
+              "full_name": "Bobby Portis",
+              "jersey_number": "9",
+              "reference": "1626171",
+              "id": "68b7aac9-02fd-4bd8-b10c-6702d2c5eb98",
+              "sr_id": "sr:player:852206"
+            },
+            {
+              "full_name": "Grayson Allen",
+              "jersey_number": "12",
+              "reference": "1628960",
+              "id": "ffa9a64f-d624-4033-bd23-59dcfd805175",
+              "sr_id": "sr:player:1497615"
+            },
+            {
+              "full_name": "Jordan Nwora",
+              "jersey_number": "13",
+              "reference": "1629670",
+              "id": "c7a6b9c5-c600-49d9-b7be-e2b12b464e40",
+              "sr_id": "sr:player:1304640"
+            },
+            {
+              "full_name": "Brook Lopez",
+              "jersey_number": "11",
+              "reference": "201572",
+              "id": "c179fb5c-9845-4e37-aef7-6e00d97548eb",
+              "sr_id": "sr:player:607534"
+            },
+            {
+              "full_name": "Jrue Holiday",
+              "jersey_number": "21",
+              "reference": "201950",
+              "id": "65700e81-3aa0-49a9-8a94-004f2cfb64e5",
+              "sr_id": "sr:player:607876"
+            }
+          ]
+        },
+        "away": {
+          "name": "Grizzlies",
+          "market": "Memphis",
+          "reference": "1610612763",
+          "id": "583eca88-fb46-11e1-82cb-f4ce4684ea4c",
+          "sr_id": "sr:team:3415",
+          "players": [
+            {
+              "full_name": "Santi Aldama",
+              "jersey_number": "7",
+              "reference": "1630583",
+              "id": "266cd359-f378-45c6-957e-6e21378e5219",
+              "sr_id": "sr:player:1876228"
+            },
+            {
+              "full_name": "John Konchar",
+              "jersey_number": "46",
+              "reference": "1629723",
+              "id": "906578a8-c01e-4799-a972-2b47e02108b9",
+              "sr_id": "sr:player:1826622"
+            },
+            {
+              "full_name": "Ziaire Williams",
+              "jersey_number": "8",
+              "reference": "1630533",
+              "id": "1c9a1c2e-3e3b-439e-8d72-0b41b17e4ba9",
+              "sr_id": "sr:player:2080949"
+            },
+            {
+              "full_name": "Brandon Clarke",
+              "jersey_number": "15",
+              "reference": "1629634",
+              "id": "c978afe7-cf22-45fc-8d0f-da8f867eb5ee",
+              "sr_id": "sr:player:1164396"
+            },
+            {
+              "full_name": "Kennedy Chandler",
+              "jersey_number": "1",
+              "reference": "1631113",
+              "id": "931f7ae2-4ce4-49e6-a3ad-e24790469fec",
+              "sr_id": "sr:player:2218226"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "locale": "en",
+  "metadata": {
+    "league": "NBA",
+    "match": "sd:match:d8539eb6-3e27-40c8-906f-9cd1736321d8",
+    "status": "inprogress",
+    "team": "sd:team:583ecefd-fb46-11e1-82cb-f4ce4684ea4c,sr:team:3410",
+    "players": "sd:player:68b7aac9-02fd-4bd8-b10c-6702d2c5eb98,sd:player:ffa9a64f-d624-4033-bd23-59dcfd805175,sd:player:c7a6b9c5-c600-49d9-b7be-e2b12b464e40,sd:player:c179fb5c-9845-4e37-aef7-6e00d97548eb,sd:player:65700e81-3aa0-49a9-8a94-004f2cfb64e5,sd:player:266cd359-f378-45c6-957e-6e21378e5219,sd:player:906578a8-c01e-4799-a972-2b47e02108b9,sd:player:1c9a1c2e-3e3b-439e-8d72-0b41b17e4ba9,sd:player:c978afe7-cf22-45fc-8d0f-da8f867eb5ee,sd:player:931f7ae2-4ce4-49e6-a3ad-e24790469fec",
+    "event_type": "lineupchange",
+    "event_category": "lineupchange",
+    "locale": "en",
+    "operation": "update",
+    "version": "v7"
+  }
+}
