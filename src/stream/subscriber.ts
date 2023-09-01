@@ -40,18 +40,6 @@ export class Subscriber extends EventEmitter {
         }
     }
 
-    private async getStreamUrl() {
-
-        const res: AxiosResponse = await axios.get(this.options.apiUrl, {
-            params: { 'api_key': this.options.apiKey },
-            maxRedirects: 0,
-            validateStatus: function (status: number) {
-                return status >= 200 && status < 303;
-            },
-        })
-
-        return res.headers.location;
-    }
 
     private backoff(delay: number) {
         return new Promise((r) => setTimeout(r, delay))
@@ -60,11 +48,13 @@ export class Subscriber extends EventEmitter {
     private async connect() {
 
         const deferred = new Defer()
-        const streamUrl = await this.getStreamUrl()
 
-        this.log.debug({ streamUrl }, "connecting...")
-
-        const response: AxiosResponse = await axios.get(streamUrl, { responseType: 'stream' })
+        const response: AxiosResponse = await axios.get(this.options.apiUrl, {
+            responseType: 'stream',
+            params: {
+                key: this.options.apiKey
+            }
+        })
         this.readable = Readable.from(response.data as NodeJS.ReadableStream)
         this.readable.on('data', (chunk: Buffer) => {
             if (chunk) {
